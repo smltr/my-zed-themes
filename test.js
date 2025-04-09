@@ -1,10 +1,10 @@
 // Simple function declaration
-function calculateArea(width, height) {
+function _calculateArea(width, height) {
   return width * height;
 }
 
 // Arrow function with template literals
-const greet = (name) => {
+const _greet = (name) => {
   console.log(`Hello, ${name}!`);
   return true;
 };
@@ -31,7 +31,7 @@ class User {
 }
 
 // Async/await example
-async function fetchUserData(userId) {
+async function _fetchUserData(userId) {
   try {
     const response = await fetch(`https://api.example.com/users/${userId}`);
     if (!response.ok) {
@@ -47,9 +47,9 @@ async function fetchUserData(userId) {
 
 // Array methods and destructuring
 const numbers = [1, 2, 3, 4, 5];
-const [first, second, ...rest] = numbers;
-const doubled = numbers.map((n) => n * 2);
-const sum = numbers.reduce((total, current) => total + current, 0);
+const [_first, _second, ..._rest] = numbers;
+const _doubled = numbers.map((n) => n * 2);
+const _sum = numbers.reduce((total, current) => total + current, 0);
 
 // Object with different value types
 const config = {
@@ -65,11 +65,11 @@ const config = {
 };
 
 // Conditional (ternary) operator
-const userRole = config.isProduction ? "admin" : "developer";
+const _userRole = config.isProduction ? "admin" : "developer";
 
 // Regular expressions
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-const isValidEmail = emailRegex.test("sam@example.com");
+const _isValidEmail = emailRegex.test("sam@example.com");
 
 // Switch statement
 function getStatusMessage(code) {
